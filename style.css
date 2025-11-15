@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: brown;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-style: double;
+    gap: 24px;
+    margin-bottom: 1rem;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+.logo {
+    width: 50px;
+    margin: 5px;
+}
+.content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 15rem);
+    gap: 10px;
+    height: 40rem;
+    overflow: auto;
+    padding: 1rem;
+}
+.foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 5px;
+    max-width: 160px;
+    min-width: 160px;
+    max-height: 228px;
+    min-height: 228px;
+    transition: 0.7s;
+    border-radius: 20px;
+}
+.pic {
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 16px;
+}
+.foto:hover {
+    background-color: gold;
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px white;
+}
+a:link {
+    color: gray;
+    text-decoration: none;
+    transition: 0.7s;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    transform: scale(1.2);
+    color: blue;
+}
+a:active {
+    color: orange;
+    transform: scale(1.2);
+    text-decoration: underline;
+}
